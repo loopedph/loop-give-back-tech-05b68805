@@ -47,6 +47,7 @@ function Index() {
       <Process />
       <Impact />
       <Financials />
+      <ImpactCalculator />
       <Contact />
       <Footer />
     </div>
