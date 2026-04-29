@@ -346,7 +346,7 @@ export function ImpactCalculator() {
                 />
                 <ImpactStat
                   Icon={Scale}
-                  value={`${num(totals.neurotoxins, 2)} kg`}
+                  value={`${num(totals.neurotoxins * 1000, 2)} g`}
                   label="Neurotoxins diverted"
                 />
                 <ImpactStat
