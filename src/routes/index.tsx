@@ -1,6 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImage from "@/assets/hero-laptop.jpg";
-import impactImage from "@/assets/impact-students.jpg";
 import logoMark from "@/assets/looped-logo.png";
 import { Button } from "@/components/ui/button";
 import {
@@ -84,23 +82,23 @@ function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
       <div className="absolute inset-0 -z-10" style={{ background: "var(--gradient-soft)" }} />
-      <div className="mx-auto max-w-6xl px-6 pt-20 pb-24 md:pt-28 md:pb-32 grid md:grid-cols-2 gap-12 items-center">
-        <div className="space-y-7">
+      <div className="mx-auto max-w-4xl px-6 pt-20 pb-24 md:pt-28 md:pb-32 text-center">
+        <div className="space-y-7 flex flex-col items-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/80 px-4 py-1.5 text-xs font-medium text-muted-foreground">
             <Leaf className="h-3.5 w-3.5 text-primary" />
             Circular IT • Pre-seed • Philippines
           </span>
-          <h1 className="text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05]">
+          <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05]">
             Closing the loop on{" "}
             <span className="italic" style={{ color: "var(--primary)" }}>
               e-waste.
             </span>
           </h1>
-          <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
+          <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
             We recover retired IT assets from companies and universities, refurbish them with
             care, and redistribute them to NGOs and communities who need them most.
           </p>
-          <div className="flex flex-wrap gap-3 pt-2">
+          <div className="flex flex-wrap gap-3 pt-2 justify-center">
             <Button asChild size="lg" className="rounded-full shadow-[var(--shadow-soft)]">
               <a href="#contact">
                 Donate your IT assets <ArrowRight className="ml-1 h-4 w-4" />
@@ -117,19 +115,6 @@ function Hero() {
             <div className="h-8 w-px bg-border" />
             <Stat value="190K L" label="Water saved" />
           </div>
-        </div>
-        <div className="relative">
-          <div
-            className="absolute -inset-4 rounded-[2rem] -z-10 opacity-40 blur-2xl"
-            style={{ background: "var(--gradient-hero)" }}
-          />
-          <img
-            src={heroImage}
-            alt="Hands holding a refurbished laptop"
-            width={1536}
-            height={1024}
-            className="relative rounded-[2rem] shadow-[var(--shadow-elegant)] object-cover w-full aspect-[4/3]"
-          />
         </div>
       </div>
     </section>
