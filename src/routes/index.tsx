@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import logoMark from "@/assets/looped-logo.png";
 import { Button } from "@/components/ui/button";
+import { ImpactCalculator } from "@/components/Calculator";
 import {
   Recycle,
   ShieldCheck,
