@@ -217,34 +217,22 @@ function Process() {
 function Impact() {
   return (
     <section id="impact" className="py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-14 items-center">
-        <div className="order-2 md:order-1">
-          <img
-            src={impactImage}
-            alt="Students using refurbished laptops in a classroom"
-            width={1280}
-            height={896}
-            loading="lazy"
-            className="rounded-[2rem] shadow-[var(--shadow-elegant)] object-cover w-full aspect-[5/4]"
-          />
-        </div>
-        <div className="order-1 md:order-2 space-y-6">
-          <p className="text-sm uppercase tracking-[0.2em] text-primary font-medium">Why it matters</p>
-          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight">
-            Every laptop has a second life — and someone waiting for it.
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Millions of working machines are scrapped each year while millions of students and
-            non-profits go without. Looped bridges that gap, turning corporate IT turnover into
-            community access.
+      <div className="mx-auto max-w-3xl px-6 text-center space-y-6">
+        <p className="text-sm uppercase tracking-[0.2em] text-primary font-medium">Why it matters</p>
+        <h2 className="text-4xl md:text-5xl font-semibold tracking-tight">
+          Every laptop has a second life — and someone waiting for it.
+        </h2>
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          Millions of working machines are scrapped each year while millions of students and
+          non-profits go without. Looped bridges that gap, turning corporate IT turnover into
+          community access.
+        </p>
+        <div className="flex items-start gap-4 pt-2 rounded-2xl border border-border bg-card p-5 text-left max-w-xl mx-auto">
+          <Sparkles className="h-5 w-5 text-primary mt-0.5 shrink-0" />
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            <span className="font-medium text-foreground">8 assets sourced.</span> Small numbers,
+            big proof: our circular model works at scale-of-one before it scales to thousands.
           </p>
-          <div className="flex items-start gap-4 pt-2 rounded-2xl border border-border bg-card p-5">
-            <Sparkles className="h-5 w-5 text-primary mt-0.5 shrink-0" />
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              <span className="font-medium text-foreground">8 assets sourced.</span> Small numbers,
-              big proof: our circular model works at scale-of-one before it scales to thousands.
-            </p>
-          </div>
         </div>
       </div>
     </section>
