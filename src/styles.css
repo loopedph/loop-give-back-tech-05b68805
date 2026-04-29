@@ -139,13 +139,29 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
+@theme inline {
+  --font-sans: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", system-ui, sans-serif;
+  --font-display: "Montserrat", "Trebuchet MS", system-ui, sans-serif;
+}
+
 @layer base {
   * {
     border-color: var(--color-border);
   }
 
+  html {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", system-ui, sans-serif;
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .font-display {
+    font-family: "Montserrat", "Trebuchet MS", system-ui, sans-serif;
+    letter-spacing: -0.02em;
   }
 }
