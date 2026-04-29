@@ -51,13 +51,13 @@ const PER_UNIT: Record<DeviceType, {
 }> = {
   laptop: {
     waterL: 190000,
-    co2Kg: 40.25,
+    co2Kg: 322,
     neurotoxinsKg: 0.0015, // 1.5 g
     landfillKg: 2.04,
   },
   desktop: {
     waterL: (285000 + 700000) / 2, // 492,500 L
-    co2Kg: 40.25 * 5.6, // ~225.4 kg
+    co2Kg: 680,
     neurotoxinsKg: ((7.9 + 9) / 2) / 1000, // ~0.00845 kg (8.45 g)
     landfillKg: (7 + 16) / 2, // 11.5 kg
   },
