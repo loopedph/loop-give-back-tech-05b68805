@@ -1,4 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
+import heroImage from "@/assets/hero-laptop.jpg";
+import impactImage from "@/assets/impact-students.jpg";
 import logoMark from "@/assets/looped-logo.png";
 import { Button } from "@/components/ui/button";
 import {
@@ -82,23 +84,23 @@ function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
       <div className="absolute inset-0 -z-10" style={{ background: "var(--gradient-soft)" }} />
-      <div className="mx-auto max-w-4xl px-6 pt-24 pb-24 md:pt-32 md:pb-32 text-center">
-        <div className="space-y-7 flex flex-col items-center">
+      <div className="mx-auto max-w-6xl px-6 pt-20 pb-24 md:pt-28 md:pb-32 grid md:grid-cols-2 gap-12 items-center">
+        <div className="space-y-7">
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/80 px-4 py-1.5 text-xs font-medium text-muted-foreground">
             <Leaf className="h-3.5 w-3.5 text-primary" />
             Circular IT • Pre-seed • Philippines
           </span>
-          <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05]">
+          <h1 className="text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05]">
             Closing the loop on{" "}
             <span className="italic" style={{ color: "var(--primary)" }}>
               e-waste.
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
+          <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
             We recover retired IT assets from companies and universities, refurbish them with
             care, and redistribute them to NGOs and communities who need them most.
           </p>
-          <div className="flex flex-wrap gap-3 pt-2 justify-center">
+          <div className="flex flex-wrap gap-3 pt-2">
             <Button asChild size="lg" className="rounded-full shadow-[var(--shadow-soft)]">
               <a href="#contact">
                 Donate your IT assets <ArrowRight className="ml-1 h-4 w-4" />
@@ -108,13 +110,26 @@ function Hero() {
               <a href="#sustainability">See our impact</a>
             </Button>
           </div>
-          <div className="flex items-center gap-8 pt-8 text-sm">
+          <div className="flex items-center gap-8 pt-6 text-sm">
             <Stat value="100%" label="E-waste recovered" />
             <div className="h-8 w-px bg-border" />
             <Stat value="322 kg" label="CO₂e avoided" />
             <div className="h-8 w-px bg-border" />
             <Stat value="190K L" label="Water saved" />
           </div>
+        </div>
+        <div className="relative">
+          <div
+            className="absolute -inset-4 rounded-[2rem] -z-10 opacity-40 blur-2xl"
+            style={{ background: "var(--gradient-hero)" }}
+          />
+          <img
+            src={heroImage}
+            alt="Hands holding a refurbished laptop"
+            width={1536}
+            height={1024}
+            className="relative rounded-[2rem] shadow-[var(--shadow-elegant)] object-cover w-full aspect-[4/3]"
+          />
         </div>
       </div>
     </section>
@@ -217,22 +232,34 @@ function Process() {
 function Impact() {
   return (
     <section id="impact" className="py-24 md:py-32">
-      <div className="mx-auto max-w-3xl px-6 text-center space-y-6">
-        <p className="text-sm uppercase tracking-[0.2em] text-primary font-medium">Why it matters</p>
-        <h2 className="text-4xl md:text-5xl font-semibold tracking-tight">
-          Every laptop has a second life — and someone waiting for it.
-        </h2>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          Millions of working machines are scrapped each year while millions of students and
-          non-profits go without. Looped bridges that gap, turning corporate IT turnover into
-          community access.
-        </p>
-        <div className="flex items-start gap-4 pt-2 rounded-2xl border border-border bg-card p-5 text-left">
-          <Sparkles className="h-5 w-5 text-primary mt-0.5 shrink-0" />
-          <p className="text-sm text-muted-foreground leading-relaxed">
-            <span className="font-medium text-foreground">8 assets sourced.</span> Small numbers,
-            big proof: our circular model works at scale-of-one before it scales to thousands.
+      <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-14 items-center">
+        <div className="order-2 md:order-1">
+          <img
+            src={impactImage}
+            alt="Students using refurbished laptops in a classroom"
+            width={1280}
+            height={896}
+            loading="lazy"
+            className="rounded-[2rem] shadow-[var(--shadow-elegant)] object-cover w-full aspect-[5/4]"
+          />
+        </div>
+        <div className="order-1 md:order-2 space-y-6">
+          <p className="text-sm uppercase tracking-[0.2em] text-primary font-medium">Why it matters</p>
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight">
+            Every laptop has a second life — and someone waiting for it.
+          </h2>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Millions of working machines are scrapped each year while millions of students and
+            non-profits go without. Looped bridges that gap, turning corporate IT turnover into
+            community access.
           </p>
+          <div className="flex items-start gap-4 pt-2 rounded-2xl border border-border bg-card p-5">
+            <Sparkles className="h-5 w-5 text-primary mt-0.5 shrink-0" />
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              <span className="font-medium text-foreground">8 assets sourced.</span> Small numbers,
+              big proof: our circular model works at scale-of-one before it scales to thousands.
+            </p>
+          </div>
         </div>
       </div>
     </section>
