@@ -40,12 +40,27 @@ const CONDITION_LABEL: Record<Condition, string> = {
   bad: "Bad",
 };
 
-// Per-unit sustainability impact (proportional from project metrics: 8 units baseline)
-const PER_UNIT = {
-  waterL: 190000 / 8, // 23,750 L
-  co2Kg: 322 / 8, // 40.25 kg
-  neurotoxinsKg: 1.5 / 8, // 0.1875 kg
-  landfillKg: 2.04 / 8, // 0.255 kg
+// Per-unit sustainability impact, by device type.
+// Ranges use midpoints. CO2e scaled proportionally from project baseline (322kg / 8 units = ~40.25kg per laptop);
+// desktops scaled by relative landfill weight (~11.5kg vs 2.04kg ≈ 5.6x).
+const PER_UNIT: Record<DeviceType, {
+  waterL: number;
+  co2Kg: number;
+  neurotoxinsKg: number; // stored in kg for consistent display
+  landfillKg: number;
+}> = {
+  laptop: {
+    waterL: 190000,
+    co2Kg: 40.25,
+    neurotoxinsKg: 0.0015, // 1.5 g
+    landfillKg: 2.04,
+  },
+  desktop: {
+    waterL: (285000 + 700000) / 2, // 492,500 L
+    co2Kg: 40.25 * 5.6, // ~225.4 kg
+    neurotoxinsKg: ((7.9 + 9) / 2) / 1000, // ~0.00845 kg (8.45 g)
+    landfillKg: (7 + 16) / 2, // 11.5 kg
+  },
 };
 
 // Avoided customer costs per unit (PHP, conservative estimates)
