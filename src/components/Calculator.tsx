@@ -126,10 +126,10 @@ export function ImpactCalculator() {
       disposalSaved,
       storageSaved,
       totalBenefit,
-      water: count * PER_UNIT.waterL,
-      co2: count * PER_UNIT.co2Kg,
-      neurotoxins: count * PER_UNIT.neurotoxinsKg,
-      landfill: count * PER_UNIT.landfillKg,
+      water: rows.reduce((s, r) => s + PER_UNIT[r.type].waterL, 0),
+      co2: rows.reduce((s, r) => s + PER_UNIT[r.type].co2Kg, 0),
+      neurotoxins: rows.reduce((s, r) => s + PER_UNIT[r.type].neurotoxinsKg, 0),
+      landfill: rows.reduce((s, r) => s + PER_UNIT[r.type].landfillKg, 0),
     };
   }, [rows]);
 
