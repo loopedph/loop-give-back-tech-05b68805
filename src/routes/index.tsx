@@ -60,9 +60,9 @@ function Nav() {
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/75 border-b border-border/60">
       <div className="mx-auto max-w-6xl px-6 py-3 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-2.5 text-xl">
+        <a href="#top" className="flex items-center gap-2.5 font-semibold tracking-tight text-xl">
           <Logo className="h-9 w-9" />
-          <span style={{ fontFamily: '"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", sans-serif', fontWeight: 400 }}>Looped</span>
+          <span>Looped</span>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#sustainability" className="hover:text-foreground transition-colors">Sustainability</a>
