@@ -70,6 +70,7 @@ function Nav() {
           <a href="#sustainability" className="hover:text-foreground transition-colors">Sustainability</a>
           <a href="#process" className="hover:text-foreground transition-colors">Process</a>
           <a href="#financials" className="hover:text-foreground transition-colors">Model</a>
+          <a href="#calculator" className="hover:text-foreground transition-colors">Calculator</a>
           <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
         </nav>
         <Button asChild size="sm" className="rounded-full">
