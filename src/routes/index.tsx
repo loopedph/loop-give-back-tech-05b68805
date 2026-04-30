@@ -387,6 +387,11 @@ function Contact() {
 }
 
 function Footer() {
+  const socials = [
+    { href: "https://www.instagram.com/loopedit.ph/", label: "Instagram", Icon: Instagram },
+    { href: "https://www.facebook.com/loopedit.ph", label: "Facebook", Icon: Facebook },
+    { href: "https://www.linkedin.com/company/loopedph", label: "LinkedIn", Icon: Linkedin },
+  ];
   return (
     <footer className="border-t border-border py-10">
       <div className="mx-auto max-w-6xl px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
@@ -395,7 +400,21 @@ function Footer() {
           <span className="font-medium text-foreground">Looped</span>
           <span>· Circular IT for the Philippines</span>
         </div>
-        <div>© {new Date().getFullYear()} Looped. All rights reserved.</div>
+        <div className="flex items-center gap-3">
+          {socials.map(({ href, label, Icon }) => (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Looped ITAD PH on ${label}`}
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card text-muted-foreground hover:text-primary hover:border-primary transition-colors"
+            >
+              <Icon className="h-4 w-4" />
+            </a>
+          ))}
+        </div>
+        <div>© {new Date().getFullYear()} Looped ITAD PH. All rights reserved.</div>
       </div>
     </footer>
   );
