@@ -67,7 +67,7 @@ export const Route = createFileRoute("/")({
           name: "Looped ITAD PH",
           alternateName: ["Looped", "Looped PH", "Looped ITAD", "LoopedIT PH"],
           url: "https://loopedph.com",
-          logo: "https://loopedph.com/favicon.png",
+          logo: "https://loopedph.com/favicon.ico",
           description:
             "Looped ITAD PH is the Philippines' circular IT asset disposition partner — recovering, sanitizing, refurbishing, and redistributing retired IT assets.",
           email: "looped@loopedph.com",
