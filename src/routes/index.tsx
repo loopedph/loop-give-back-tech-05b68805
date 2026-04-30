@@ -22,17 +22,62 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Looped — Circular IT for a Sustainable Future" },
+      { title: "Looped ITAD PH — Circular IT Asset Disposition Philippines" },
       {
         name: "description",
         content:
-          "Looped recovers retired IT assets, refurbishes them, and redistributes them to NGOs — diverting e-waste, saving water, and avoiding CO₂ emissions.",
+          "Looped ITAD PH is the Philippines' circular IT asset disposition partner. We recover, sanitize, and refurbish retired laptops and PCs for NGOs — 100% e-waste recovery, zero data leaks.",
       },
-      { property: "og:title", content: "Looped — Circular IT for a Sustainable Future" },
+      {
+        name: "keywords",
+        content:
+          "Looped ITAD, Looped ITAD PH, Looped PH, ITAD PH, IT asset disposition Philippines, e-waste Philippines, laptop refurbishment Philippines, circular IT, data destruction Philippines, Looped",
+      },
+      { name: "robots", content: "index, follow" },
+      { name: "author", content: "Looped ITAD PH" },
+      { property: "og:site_name", content: "Looped ITAD PH" },
+      { property: "og:title", content: "Looped ITAD PH — Circular IT Asset Disposition Philippines" },
       {
         property: "og:description",
         content:
-          "Closing the loop on e-waste. 100% recovery rate, zero liabilities, real climate impact.",
+          "Closing the loop on e-waste in the Philippines. Certified ITAD, 100% recovery rate, zero liabilities, real climate impact.",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://loopedph.com" },
+      { property: "og:locale", content: "en_PH" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Looped ITAD PH — Circular IT Asset Disposition" },
+      {
+        name: "twitter:description",
+        content: "Philippines' circular ITAD partner. Recover, refurbish, redistribute.",
+      },
+    ],
+    links: [
+      { rel: "canonical", href: "https://loopedph.com" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Looped ITAD PH",
+          alternateName: ["Looped", "Looped PH", "Looped ITAD", "LoopedIT PH"],
+          url: "https://loopedph.com",
+          logo: "https://loopedph.com/favicon.png",
+          description:
+            "Looped ITAD PH is the Philippines' circular IT asset disposition partner — recovering, sanitizing, refurbishing, and redistributing retired IT assets.",
+          email: "looped@loopedph.com",
+          address: {
+            "@type": "PostalAddress",
+            addressCountry: "PH",
+          },
+          sameAs: [
+            "https://www.instagram.com/loopedit.ph/",
+            "https://www.facebook.com/loopedit.ph",
+            "https://www.linkedin.com/company/loopedph",
+          ],
+        }),
       },
     ],
   }),
