@@ -16,6 +16,9 @@ import {
   TrendingUp,
   Wallet,
   Sparkles,
+  Instagram,
+  Facebook,
+  Linkedin,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
