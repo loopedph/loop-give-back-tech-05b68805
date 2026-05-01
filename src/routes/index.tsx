@@ -293,15 +293,52 @@ function Impact() {
 
 function AdvisedBy() {
   return (
-    <section id="advised-by" className="py-20 md:py-24 border-t border-border/60">
-      <div className="mx-auto max-w-3xl px-6 text-center space-y-5">
-        <p className="text-sm uppercase tracking-[0.2em] text-primary font-medium">Advised by</p>
-        <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-          Our social impact framework is guided by human rights and institutional governance expertise.
-        </p>
-        <div className="inline-flex items-center gap-3 rounded-full border border-border bg-card px-5 py-2.5">
-          <ShieldCheck className="h-4 w-4 text-primary" />
-          <span className="text-sm font-medium">The Chairman of the Commission on Human Rights</span>
+    <section id="advised-by" className="py-24 md:py-32 relative overflow-hidden">
+      <div className="absolute inset-0 -z-10 opacity-[0.05]" style={{ background: "var(--gradient-hero)" }} />
+      <div className="mx-auto max-w-5xl px-6">
+        <div className="text-center mb-12">
+          <p className="text-sm uppercase tracking-[0.2em] text-primary font-medium mb-4 inline-flex items-center gap-2">
+            <Sparkles className="h-4 w-4" /> Advised by
+          </p>
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-[1.1] max-w-3xl mx-auto">
+            Guided by leaders in{" "}
+            <span style={{ color: "var(--primary)" }}>human rights</span> and institutional governance.
+          </h2>
+          <p className="mt-5 text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+            Our social impact framework is built on the counsel of those who shape the country's
+            most consequential institutions.
+          </p>
+        </div>
+
+        <div className="relative max-w-2xl mx-auto">
+          <div
+            className="absolute -inset-px rounded-3xl opacity-60 blur-xl"
+            style={{ background: "var(--gradient-hero)" }}
+          />
+          <div className="relative rounded-3xl border border-border bg-card p-8 md:p-10 shadow-[var(--shadow-soft)]">
+            <div className="flex items-start gap-5">
+              <div
+                className="hidden sm:inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl text-primary-foreground"
+                style={{ background: "var(--gradient-hero)" }}
+              >
+                <Scale className="h-6 w-6" />
+              </div>
+              <div className="flex-1 space-y-3">
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
+                  <ShieldCheck className="h-3 w-3" />
+                  Strategic Advisor
+                </div>
+                <div>
+                  <div className="text-xl md:text-2xl font-semibold tracking-tight">
+                    The Chairman of the Commission on Human Rights
+                  </div>
+                  <div className="text-sm text-muted-foreground mt-1.5">
+                    Republic of the Philippines
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
