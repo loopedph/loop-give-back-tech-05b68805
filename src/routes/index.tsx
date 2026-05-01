@@ -291,6 +291,23 @@ function Impact() {
   );
 }
 
+function AdvisedBy() {
+  return (
+    <section id="advised-by" className="py-20 md:py-24 border-t border-border/60">
+      <div className="mx-auto max-w-3xl px-6 text-center space-y-5">
+        <p className="text-sm uppercase tracking-[0.2em] text-primary font-medium">Advised by</p>
+        <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+          Our social impact framework is guided by human rights and institutional governance expertise.
+        </p>
+        <div className="inline-flex items-center gap-3 rounded-full border border-border bg-card px-5 py-2.5">
+          <ShieldCheck className="h-4 w-4 text-primary" />
+          <span className="text-sm font-medium">The Chairman of the Commission on Human Rights</span>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Financials() {
   const headline = [
     { icon: TrendingUp, value: "90%", label: "Gross margin", note: "₱2,500 sales · ₱250 COGS" },
