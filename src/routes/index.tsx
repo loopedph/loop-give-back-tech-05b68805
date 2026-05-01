@@ -312,10 +312,10 @@ function AdvisedBy() {
 
         <div className="relative max-w-2xl mx-auto">
           <div
-            className="absolute -inset-px rounded-3xl opacity-60 blur-xl"
+            className="absolute -inset-px rounded-3xl opacity-20 blur-md"
             style={{ background: "var(--gradient-hero)" }}
           />
-          <div className="relative rounded-3xl border border-border bg-card p-8 md:p-10 shadow-[var(--shadow-soft)]">
+          <div className="relative rounded-3xl border border-border bg-card p-8 md:p-10">
             <div className="flex items-start gap-5">
               <div
                 className="hidden sm:inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl text-primary-foreground"
