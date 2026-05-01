@@ -94,6 +94,7 @@ function Index() {
       <Sustainability />
       <Process />
       <Impact />
+      <AdvisedBy />
       <Financials />
       <ImpactCalculator />
       <Contact />
