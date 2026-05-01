@@ -327,11 +327,26 @@ function Financials() {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-px rounded-2xl overflow-hidden bg-border">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-px rounded-2xl overflow-hidden bg-border mb-px">
           <MiniMetric value="₱13.7K" label="Total equity" />
+          <MiniMetric value="₱0" label="Total liabilities" />
           <MiniMetric value="1" label="Assets sourced" />
+          <MiniMetric value="100%" label="Functional rate" />
+          <MiniMetric value="100%" label="Data destruction success" />
           <MiniMetric value="1.0" label="Refurbishment yield" />
           <MiniMetric value="0%" label="Lost asset rate" />
+          <MiniMetric value="0%" label="Scrap rate" />
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-px rounded-2xl overflow-hidden bg-border mt-5">
+          <MiniMetric value="50%" label="Lead generation rate" />
+          <MiniMetric value="50%" label="Response rate" />
+          <MiniMetric value="50%" label="Partnership-to-lead rate" />
+          <MiniMetric value="1" label="Inquiry count" />
+          <MiniMetric value="9" label="Instagram followers" />
+          <MiniMetric value="3" label="LinkedIn followers" />
+          <MiniMetric value="0" label="Modeled MRR" />
+          <MiniMetric value="0" label="Burn rate" />
         </div>
       </div>
     </section>
