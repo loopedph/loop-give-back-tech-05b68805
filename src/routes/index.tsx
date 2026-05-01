@@ -281,7 +281,7 @@ function Impact() {
         <div className="flex items-start gap-4 pt-2 rounded-2xl border border-border bg-card p-5 text-left max-w-xl mx-auto">
           <Sparkles className="h-5 w-5 text-primary mt-0.5 shrink-0" />
           <p className="text-sm text-muted-foreground leading-relaxed">
-            <span className="font-medium text-foreground">8 assets sourced.</span> Small numbers,
+            <span className="font-medium text-foreground">1 asset sourced · 100% functional.</span> Small numbers,
             big proof: our circular model works at scale-of-one before it scales to thousands.
           </p>
         </div>
@@ -327,11 +327,26 @@ function Financials() {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-px rounded-2xl overflow-hidden bg-border">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-px rounded-2xl overflow-hidden bg-border mb-px">
           <MiniMetric value="₱13.7K" label="Total equity" />
-          <MiniMetric value="8" label="Assets sourced" />
+          <MiniMetric value="₱0" label="Total liabilities" />
+          <MiniMetric value="1" label="Assets sourced" />
+          <MiniMetric value="100%" label="Functional rate" />
+          <MiniMetric value="100%" label="Data destruction success" />
           <MiniMetric value="1.0" label="Refurbishment yield" />
           <MiniMetric value="0%" label="Lost asset rate" />
+          <MiniMetric value="0%" label="Scrap rate" />
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-px rounded-2xl overflow-hidden bg-border mt-5">
+          <MiniMetric value="50%" label="Lead generation rate" />
+          <MiniMetric value="50%" label="Response rate" />
+          <MiniMetric value="50%" label="Partnership-to-lead rate" />
+          <MiniMetric value="1" label="Inquiry count" />
+          <MiniMetric value="9" label="Instagram followers" />
+          <MiniMetric value="3" label="LinkedIn followers" />
+          <MiniMetric value="0" label="Modeled MRR" />
+          <MiniMetric value="0" label="Burn rate" />
         </div>
       </div>
     </section>
