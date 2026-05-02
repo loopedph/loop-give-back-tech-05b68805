@@ -27,10 +27,10 @@ interface Item {
 }
 
 const CONDITION_MULTIPLIER: Record<Condition, number> = {
-  like_new: 1.5,
-  good: 1.4,
-  fair: 1.2,
-  bad: 1.15,
+  like_new: 1.35,
+  good: 1.2,
+  fair: 1.15,
+  bad: 1.1,
 };
 
 const CONDITION_LABEL: Record<Condition, string> = {
