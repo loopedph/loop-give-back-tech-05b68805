@@ -187,7 +187,7 @@ function Sustainability() {
     { icon: Recycle, value: "100%", label: "E-waste recovery rate", note: "Nothing we touch goes to landfill." },
     { icon: Cloud, value: "644 kg", label: "CO₂e emissions avoided", note: "Equivalent to ~2,600 km not driven." },
     { icon: Droplets, value: "380,000 L", label: "Freshwater saved", note: "From avoided new-device manufacturing." },
-    { icon: Scale, value: "3", label: "Neurotoxins kept out of soil", note: "Lead, cadmium, mercury — diverted." },
+    { icon: Scale, value: "3 g", label: "Neurotoxins kept out of soil", note: "Lead, cadmium, mercury — diverted." },
     { icon: Leaf, value: "4.34 kg", label: "Diverted from landfill", note: "Every gram matters in a linear world." },
     { icon: ShieldCheck, value: "100%", label: "Data destruction success", note: "Zero data leaks. Ever." },
   ];
