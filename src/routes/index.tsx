@@ -452,24 +452,23 @@ function AdvisedBy() {
             style={{ background: "var(--gradient-hero)" }}
           />
           <div className="relative rounded-3xl border border-border bg-card p-8 md:p-10">
-            <div className="flex items-start gap-5">
-              <div
-                className="hidden sm:inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl text-primary-foreground"
-                style={{ background: "var(--gradient-hero)" }}
-              >
-                <Scale className="h-6 w-6" />
-              </div>
-              <div className="flex-1 space-y-3">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+              <img
+                src={advisorChr}
+                alt="Richard Palpal-Latoc — Chairperson of the Commission on Human Rights"
+                className="h-28 w-28 rounded-2xl object-cover shrink-0 ring-2 ring-primary/20"
+              />
+              <div className="flex-1 space-y-3 text-center sm:text-left">
                 <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
                   <ShieldCheck className="h-3 w-3" />
                   Strategic Advisor
                 </div>
                 <div>
                   <div className="text-xl md:text-2xl font-semibold tracking-tight">
-                    The Chairman of the Commission on Human Rights
+                    Richard Palpal-latoc
                   </div>
                   <div className="text-sm text-muted-foreground mt-1.5">
-                    Republic of the Philippines
+                    Chairperson, Commission on Human Rights · Republic of the Philippines
                   </div>
                 </div>
               </div>
