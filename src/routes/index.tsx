@@ -147,11 +147,12 @@ function Nav() {
           <Logo className="h-9 w-9" />
           <span style={{ fontFamily: '"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", sans-serif', fontWeight: 400 }}>Looped</span>
         </a>
-        <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
-          <a href="#sustainability" className="hover:text-foreground transition-colors">Sustainability</a>
-          <a href="#process" className="hover:text-foreground transition-colors">Process</a>
+        <nav className="hidden md:flex items-center gap-7 text-sm text-muted-foreground">
+          <a href="#problem" className="hover:text-foreground transition-colors">Problem</a>
+          <a href="#process" className="hover:text-foreground transition-colors">Solution</a>
+          <a href="#product" className="hover:text-foreground transition-colors">Product</a>
           <a href="#financials" className="hover:text-foreground transition-colors">Model</a>
-          <a href="#calculator" className="hover:text-foreground transition-colors">Calculator</a>
+          <a href="#team" className="hover:text-foreground transition-colors">Team</a>
           <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
         </nav>
         <Button asChild size="sm" className="rounded-full">
