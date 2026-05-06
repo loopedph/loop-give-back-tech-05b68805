@@ -3,6 +3,11 @@ import logoMark from "@/assets/looped-logo.png";
 import productDashboard from "@/assets/product-dashboard.png";
 import productAssets from "@/assets/product-assets.png";
 import productRetire from "@/assets/product-retire.png";
+import advisorChr from "@/assets/advisor-chr.jpg";
+import teamKarl from "@/assets/team-karl.jpg";
+import teamAldrich from "@/assets/team-aldrich.jpg";
+import teamSami from "@/assets/team-sami.jpg";
+import teamTim from "@/assets/team-tim.jpg";
 import { Button } from "@/components/ui/button";
 import { ImpactCalculator } from "@/components/Calculator";
 import {
@@ -12,8 +17,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Check, Layers } from "lucide-react";
 import {
+  Check,
+  Layers,
   Recycle,
   ShieldCheck,
   Cpu,
@@ -30,6 +36,14 @@ import {
   Instagram,
   Facebook,
   Linkedin,
+  Globe2,
+  Wifi,
+  Users,
+  Target,
+  Rocket,
+  Building2,
+  Network,
+  Trash2,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
