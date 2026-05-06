@@ -104,6 +104,8 @@ function Index() {
       <Hero />
       <Sustainability />
       <Process />
+      <Product />
+      <Packages />
       <Impact />
       <AdvisedBy />
       <Financials />
