@@ -438,7 +438,11 @@ function Impact() {
           <Sparkles className="h-5 w-5 text-primary mt-0.5 shrink-0" />
           <p className="text-sm text-muted-foreground leading-relaxed">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <span className="font-medium text-foreground">2 assets sourced · 100% functional.</span> Small numbers,
+=======
+            <span className="font-medium text-foreground">3 assets sourced · 67% functional.</span> Small numbers,
+>>>>>>> parent of 2518252 (Updated refurbishment cycle to 67%)
 =======
             <span className="font-medium text-foreground">3 assets sourced · 67% functional.</span> Small numbers,
 >>>>>>> parent of 2518252 (Updated refurbishment cycle to 67%)
@@ -549,6 +553,9 @@ function Financials() {
           <MiniMetric value="₱23.7K" label="Total equity" />
           <MiniMetric value="3" label="Assets sourced" />
           <MiniMetric value="0.67" label="Refurbishment yield" />
+<<<<<<< HEAD
+>>>>>>> parent of 2518252 (Updated refurbishment cycle to 67%)
+=======
 >>>>>>> parent of 2518252 (Updated refurbishment cycle to 67%)
           <MiniMetric value="0%" label="Lost asset rate" />
         </div>
