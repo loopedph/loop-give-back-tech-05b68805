@@ -347,23 +347,23 @@ function Product() {
 
 function Packages() {
   const tiers = [
-    { name: "Free", units: "5", highlight: false },
-    { name: "Starter", units: "30", highlight: true },
-    { name: "Growth", units: "100", highlight: false },
-    { name: "Enterprise", units: "Unlimited", highlight: false },
+    { name: "Free", desc: "Pilot the loop with a small fleet — see your assets, value, and impact in one view." },
+    { name: "Starter", desc: "For growing MSMEs ready to formalise IT lifecycle tracking and retirement.", highlight: true },
+    { name: "Growth", desc: "Scale-stage teams managing departmental fleets across multiple locations." },
+    { name: "Enterprise", desc: "Tailored deployments for institutions, schools, and large organisations." },
   ];
-  const perks = ["Free dashboard", "Free retirement*", "Free ESG reports"];
+  const perks = ["Dashboard included", "Retirement included", "ESG reports included"];
   return (
     <section id="packages" className="py-24 md:py-32 bg-secondary/40">
       <div className="mx-auto max-w-6xl px-6">
         <div className="max-w-2xl mb-12 text-center mx-auto">
-          <p className="text-sm uppercase tracking-[0.2em] text-primary font-medium mb-3">How we source</p>
+          <p className="text-sm uppercase tracking-[0.2em] text-primary font-medium mb-3">Built for every stage</p>
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-[1.1]">
             The <span style={{ color: "var(--primary)" }}>ITAM Loop.</span>
           </h2>
           <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-            Pick the tier that fits your fleet. Every plan includes the dashboard, retirement, and
-            ESG reporting at no cost.
+            From a five-laptop pilot to enterprise-wide rollouts — there's a tier sized to your fleet.
+            Talk to us for the right fit.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -382,11 +382,8 @@ function Packages() {
               <div className="text-xl font-semibold tracking-tight" style={{ color: "var(--primary)" }}>
                 {t.name}
               </div>
-              <div className="mt-4 flex items-baseline gap-1.5">
-                <span className="text-3xl font-semibold tracking-tight">{t.units}</span>
-                <span className="text-sm text-muted-foreground">IT units</span>
-              </div>
-              <ul className="mt-6 space-y-2.5">
+              <p className="mt-3 text-sm text-muted-foreground leading-relaxed min-h-[60px]">{t.desc}</p>
+              <ul className="mt-5 space-y-2.5 border-t border-border pt-5">
                 {perks.map((p) => (
                   <li key={p} className="flex items-center gap-2 text-sm">
                     <Check className="h-4 w-4 text-primary shrink-0" />
@@ -397,8 +394,8 @@ function Packages() {
             </div>
           ))}
         </div>
-        <p className="text-xs text-muted-foreground text-center mt-6 italic">
-          *Other costs may be incurred — only the data wipe is free.
+        <p className="text-xs text-muted-foreground text-center mt-6">
+          <a href="#contact" className="underline hover:text-primary transition-colors">Get in touch</a> for tier details.
         </p>
       </div>
     </section>
