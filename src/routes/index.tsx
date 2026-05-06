@@ -1,7 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
 import logoMark from "@/assets/looped-logo.png";
+import productDashboard from "@/assets/product-dashboard.png";
+import productAssets from "@/assets/product-assets.png";
+import productRetire from "@/assets/product-retire.png";
 import { Button } from "@/components/ui/button";
 import { ImpactCalculator } from "@/components/Calculator";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Check, Layers } from "lucide-react";
 import {
   Recycle,
   ShieldCheck,
