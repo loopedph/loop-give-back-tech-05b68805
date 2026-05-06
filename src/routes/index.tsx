@@ -116,13 +116,18 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground">
       <Nav />
       <Hero />
+      <Problem />
       <Sustainability />
       <Process />
       <Product />
       <Packages />
+      <SourcesAndMarket />
+      <Moat />
       <Impact />
       <AdvisedBy />
       <Financials />
+      <Roadmap />
+      <Team />
       <ImpactCalculator />
       <Contact />
       <Footer />
