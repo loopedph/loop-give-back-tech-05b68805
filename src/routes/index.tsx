@@ -174,11 +174,11 @@ function Hero() {
             </Button>
           </div>
           <div className="flex items-center gap-8 pt-6 text-sm">
-            <Stat value="100%" label="E-waste recovered" />
+            <Stat value="67%" label="E-waste recovered" />
             <div className="h-8 w-px bg-border" />
-            <Stat value="644 kg" label="CO₂e avoided" />
+            <Stat value="966 kg" label="CO₂e avoided" />
             <div className="h-8 w-px bg-border" />
-            <Stat value="380K L" label="Water saved" />
+            <Stat value="570K L" label="Water saved" />
           </div>
         </div>
       </div>
