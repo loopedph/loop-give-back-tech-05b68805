@@ -180,8 +180,8 @@ function Hero() {
             </span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-            We recover retired IT assets from companies and universities, refurbish them with
-            care, and redistribute them to NGOs and communities who need them most.
+            A B2B2B circular solution recovering retired IT assets from MSMEs and institutions —
+            wiping, refurbishing, and redistributing them to NGOs, LGUs, and communities.
           </p>
           <div className="flex flex-wrap gap-3 pt-2 justify-center">
             <Button asChild size="lg" className="rounded-full shadow-[var(--shadow-soft)]">
