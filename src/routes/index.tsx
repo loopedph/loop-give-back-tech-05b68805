@@ -174,7 +174,7 @@ function Hero() {
             </Button>
           </div>
           <div className="flex items-center gap-8 pt-6 text-sm">
-            <Stat value="67%" label="E-waste recovered" />
+            <Stat value="100%" label="E-waste recovered" />
             <div className="h-8 w-px bg-border" />
             <Stat value="966 kg" label="CO₂e avoided" />
             <div className="h-8 w-px bg-border" />
@@ -197,7 +197,7 @@ function Stat({ value, label }: { value: string; label: string }) {
 
 function Sustainability() {
   const items = [
-    { icon: Recycle, value: "67%", label: "E-waste recovery rate", note: "Most of what we touch never sees a landfill." },
+    { icon: Recycle, value: "100%", label: "E-waste recovery rate", note: "Nothing we touch goes to landfill." },
     { icon: Cloud, value: "966 kg", label: "CO₂e emissions avoided", note: "Equivalent to ~3,900 km not driven." },
     { icon: Droplets, value: "570,000 L", label: "Freshwater saved", note: "From avoided new-device manufacturing." },
     { icon: Scale, value: "4.5 g", label: "Neurotoxins kept out of soil", note: "Lead, cadmium, mercury — diverted." },
