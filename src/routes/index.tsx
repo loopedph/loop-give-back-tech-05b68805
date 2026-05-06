@@ -437,7 +437,11 @@ function Impact() {
         <div className="flex items-start gap-4 pt-2 rounded-2xl border border-border bg-card p-5 text-left max-w-xl mx-auto">
           <Sparkles className="h-5 w-5 text-primary mt-0.5 shrink-0" />
           <p className="text-sm text-muted-foreground leading-relaxed">
+<<<<<<< HEAD
             <span className="font-medium text-foreground">2 assets sourced · 100% functional.</span> Small numbers,
+=======
+            <span className="font-medium text-foreground">3 assets sourced · 67% functional.</span> Small numbers,
+>>>>>>> parent of 2518252 (Updated refurbishment cycle to 67%)
             big proof: our circular model works at scale-of-one before it scales to thousands.
           </p>
         </div>
@@ -537,9 +541,15 @@ function Financials() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-px rounded-2xl overflow-hidden bg-border">
+<<<<<<< HEAD
           <MiniMetric value="₱13.7K" label="Total equity" />
           <MiniMetric value="2" label="Assets sourced" />
           <MiniMetric value="1.0" label="Refurbishment yield" />
+=======
+          <MiniMetric value="₱23.7K" label="Total equity" />
+          <MiniMetric value="3" label="Assets sourced" />
+          <MiniMetric value="0.67" label="Refurbishment yield" />
+>>>>>>> parent of 2518252 (Updated refurbishment cycle to 67%)
           <MiniMetric value="0%" label="Lost asset rate" />
         </div>
       </div>
