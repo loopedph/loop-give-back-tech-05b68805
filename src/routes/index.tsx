@@ -396,9 +396,9 @@ function Financials() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-px rounded-2xl overflow-hidden bg-border">
-          <MiniMetric value="₱13.7K" label="Total equity" />
-          <MiniMetric value="2" label="Assets sourced" />
-          <MiniMetric value="1.0" label="Refurbishment yield" />
+          <MiniMetric value="₱23.7K" label="Total equity" />
+          <MiniMetric value="3" label="Assets sourced" />
+          <MiniMetric value="0.67" label="Refurbishment yield" />
           <MiniMetric value="0%" label="Lost asset rate" />
         </div>
       </div>
