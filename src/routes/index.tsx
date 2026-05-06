@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import logoMark from "@/assets/looped-logo.png";
+<<<<<<< HEAD
 import productDashboard from "@/assets/product-dashboard.png";
 import productAssets from "@/assets/product-assets.png";
 import productRetire from "@/assets/product-retire.png";
@@ -20,6 +21,11 @@ import {
 import {
   Check,
   Layers,
+=======
+import { Button } from "@/components/ui/button";
+import { ImpactCalculator } from "@/components/Calculator";
+import {
+>>>>>>> parent of 8063780 (Added carousel, packages, metrics)
   Recycle,
   ShieldCheck,
   Cpu,
@@ -119,10 +125,13 @@ function Index() {
       <Problem />
       <Sustainability />
       <Process />
+<<<<<<< HEAD
       <Product />
       <Packages />
       <SourcesAndMarket />
       <Moat />
+=======
+>>>>>>> parent of 8063780 (Added carousel, packages, metrics)
       <Impact />
       <AdvisedBy />
       <Financials />
@@ -196,9 +205,9 @@ function Hero() {
           <div className="flex items-center gap-8 pt-6 text-sm">
             <Stat value="100%" label="E-waste recovered" />
             <div className="h-8 w-px bg-border" />
-            <Stat value="966 kg" label="CO₂e avoided" />
+            <Stat value="644 kg" label="CO₂e avoided" />
             <div className="h-8 w-px bg-border" />
-            <Stat value="570K L" label="Water saved" />
+            <Stat value="380K L" label="Water saved" />
           </div>
         </div>
       </div>
@@ -218,10 +227,17 @@ function Stat({ value, label }: { value: string; label: string }) {
 function Sustainability() {
   const items = [
     { icon: Recycle, value: "100%", label: "E-waste recovery rate", note: "Nothing we touch goes to landfill." },
+<<<<<<< HEAD
     { icon: Cloud, value: "966 kg", label: "CO₂e emissions avoided", note: "Equivalent to ~3,900 km not driven." },
     { icon: Droplets, value: "570,000 L", label: "Freshwater saved", note: "From avoided new-device manufacturing." },
     { icon: Scale, value: "4.5 g", label: "Neurotoxins kept out of soil", note: "Lead, cadmium, mercury — diverted." },
     { icon: Leaf, value: "6.64 kg", label: "Diverted from landfill", note: "Every gram matters in a linear world." },
+=======
+    { icon: Cloud, value: "644 kg", label: "CO₂e emissions avoided", note: "Equivalent to ~2,600 km not driven." },
+    { icon: Droplets, value: "380,000 L", label: "Freshwater saved", note: "From avoided new-device manufacturing." },
+    { icon: Scale, value: "3 g", label: "Neurotoxins kept out of soil", note: "Lead, cadmium, mercury — diverted." },
+    { icon: Leaf, value: "4.34 kg", label: "Diverted from landfill", note: "Every gram matters in a linear world." },
+>>>>>>> parent of 8063780 (Added carousel, packages, metrics)
     { icon: ShieldCheck, value: "100%", label: "Data destruction success", note: "Zero data leaks. Ever." },
   ];
   return (
@@ -299,6 +315,7 @@ function Process() {
   );
 }
 
+<<<<<<< HEAD
 function Product() {
   const shots = [
     { src: productDashboard, title: "Dashboard", desc: "Your IT portfolio at a glance — value, CO₂e, and salvage in one view." },
@@ -402,6 +419,8 @@ function Packages() {
   );
 }
 
+=======
+>>>>>>> parent of 8063780 (Added carousel, packages, metrics)
 function Impact() {
   return (
     <section id="impact" className="py-24 md:py-32">
@@ -418,7 +437,7 @@ function Impact() {
         <div className="flex items-start gap-4 pt-2 rounded-2xl border border-border bg-card p-5 text-left max-w-xl mx-auto">
           <Sparkles className="h-5 w-5 text-primary mt-0.5 shrink-0" />
           <p className="text-sm text-muted-foreground leading-relaxed">
-            <span className="font-medium text-foreground">3 assets sourced · 67% functional.</span> Small numbers,
+            <span className="font-medium text-foreground">2 assets sourced · 100% functional.</span> Small numbers,
             big proof: our circular model works at scale-of-one before it scales to thousands.
           </p>
         </div>
@@ -518,9 +537,9 @@ function Financials() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-px rounded-2xl overflow-hidden bg-border">
-          <MiniMetric value="₱23.7K" label="Total equity" />
-          <MiniMetric value="3" label="Assets sourced" />
-          <MiniMetric value="0.67" label="Refurbishment yield" />
+          <MiniMetric value="₱13.7K" label="Total equity" />
+          <MiniMetric value="2" label="Assets sourced" />
+          <MiniMetric value="1.0" label="Refurbishment yield" />
           <MiniMetric value="0%" label="Lost asset rate" />
         </div>
       </div>
