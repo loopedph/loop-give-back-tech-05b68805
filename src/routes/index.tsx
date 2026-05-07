@@ -1,7 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
 import logoMark from "@/assets/looped-logo.png";
+import productDashboard from "@/assets/product-dashboard.png";
+import productAssets from "@/assets/product-assets.png";
+import productRetire from "@/assets/product-retire.png";
 import { Button } from "@/components/ui/button";
 import { ImpactCalculator } from "@/components/Calculator";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Check, Layers } from "lucide-react";
 import {
   Recycle,
   ShieldCheck,
@@ -93,6 +104,8 @@ function Index() {
       <Hero />
       <Sustainability />
       <Process />
+      <Product />
+      <Packages />
       <Impact />
       <AdvisedBy />
       <Financials />
@@ -163,9 +176,9 @@ function Hero() {
           <div className="flex items-center gap-8 pt-6 text-sm">
             <Stat value="100%" label="E-waste recovered" />
             <div className="h-8 w-px bg-border" />
-            <Stat value="644 kg" label="CO₂e avoided" />
+            <Stat value="966 kg" label="CO₂e avoided" />
             <div className="h-8 w-px bg-border" />
-            <Stat value="380K L" label="Water saved" />
+            <Stat value="570K L" label="Water saved" />
           </div>
         </div>
       </div>
@@ -185,10 +198,10 @@ function Stat({ value, label }: { value: string; label: string }) {
 function Sustainability() {
   const items = [
     { icon: Recycle, value: "100%", label: "E-waste recovery rate", note: "Nothing we touch goes to landfill." },
-    { icon: Cloud, value: "644 kg", label: "CO₂e emissions avoided", note: "Equivalent to ~2,600 km not driven." },
-    { icon: Droplets, value: "380,000 L", label: "Freshwater saved", note: "From avoided new-device manufacturing." },
-    { icon: Scale, value: "3 g", label: "Neurotoxins kept out of soil", note: "Lead, cadmium, mercury — diverted." },
-    { icon: Leaf, value: "4.34 kg", label: "Diverted from landfill", note: "Every gram matters in a linear world." },
+    { icon: Cloud, value: "966 kg", label: "CO₂e emissions avoided", note: "Equivalent to ~3,900 km not driven." },
+    { icon: Droplets, value: "570,000 L", label: "Freshwater saved", note: "From avoided new-device manufacturing." },
+    { icon: Scale, value: "4.5 g", label: "Neurotoxins kept out of soil", note: "Lead, cadmium, mercury — diverted." },
+    { icon: Leaf, value: "6.64 kg", label: "Diverted from landfill", note: "Every gram matters in a linear world." },
     { icon: ShieldCheck, value: "100%", label: "Data destruction success", note: "Zero data leaks. Ever." },
   ];
   return (
@@ -266,6 +279,112 @@ function Process() {
   );
 }
 
+function Product() {
+  const shots = [
+    { src: productDashboard, title: "Dashboard", desc: "Your IT portfolio at a glance — value, CO₂e, and salvage in one view." },
+    { src: productAssets, title: "Asset Inventory", desc: "Track every device's age, useful life, and salvage value in real time." },
+    { src: productRetire, title: "One-click Retirement", desc: "Certified data destruction, refurbishment, and NGO redistribution — all logged." },
+  ];
+  return (
+    <section id="product" className="py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="max-w-2xl mb-12">
+          <p className="text-sm uppercase tracking-[0.2em] text-primary font-medium mb-3 inline-flex items-center gap-2">
+            <Layers className="h-4 w-4" /> Built for MSMEs
+          </p>
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-[1.1]">
+            IT asset management,{" "}
+            <span style={{ color: "var(--primary)" }}>without the enterprise price tag.</span>
+          </h2>
+          <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
+            Most MSMEs lose track of their hardware long before it loses value. Looped gives you a
+            simple dashboard to inventory, value, and responsibly retire every device.
+          </p>
+        </div>
+        <Carousel opts={{ align: "start", loop: true }} className="w-full">
+          <CarouselContent className="-ml-4">
+            {shots.map((s) => (
+              <CarouselItem key={s.title} className="pl-4 md:basis-4/5 lg:basis-3/4">
+                <div className="rounded-2xl border border-border bg-card overflow-hidden shadow-[var(--shadow-soft)]">
+                  <img src={s.src} alt={s.title} className="w-full h-auto block" loading="lazy" />
+                  <div className="p-6">
+                    <h3 className="text-lg font-semibold">{s.title}</h3>
+                    <p className="text-sm text-muted-foreground mt-1.5 leading-relaxed">{s.desc}</p>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="flex justify-end gap-2 mt-6">
+            <CarouselPrevious className="static translate-y-0" />
+            <CarouselNext className="static translate-y-0" />
+          </div>
+        </Carousel>
+      </div>
+    </section>
+  );
+}
+
+function Packages() {
+  const tiers = [
+    { name: "Free", units: "5", highlight: false },
+    { name: "Starter", units: "30", highlight: true },
+    { name: "Growth", units: "100", highlight: false },
+    { name: "Enterprise", units: "Unlimited", highlight: false },
+  ];
+  const perks = ["Free dashboard", "Free retirement*", "Free ESG reports"];
+  return (
+    <section id="packages" className="py-24 md:py-32 bg-secondary/40">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="max-w-2xl mb-12 text-center mx-auto">
+          <p className="text-sm uppercase tracking-[0.2em] text-primary font-medium mb-3">How we source</p>
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight leading-[1.1]">
+            The <span style={{ color: "var(--primary)" }}>ITAM Loop.</span>
+          </h2>
+          <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
+            Pick the tier that fits your fleet. Every plan includes the dashboard, retirement, and
+            ESG reporting at no cost.
+          </p>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {tiers.map((t) => (
+            <div
+              key={t.name}
+              className={`relative rounded-2xl border bg-card p-7 transition-[var(--transition-smooth)] hover:-translate-y-1 hover:shadow-[var(--shadow-soft)] ${
+                t.highlight ? "border-primary" : "border-border"
+              }`}
+            >
+              {t.highlight && (
+                <div className="absolute -top-3 left-7 rounded-full bg-primary px-3 py-0.5 text-xs font-medium text-primary-foreground">
+                  Most popular
+                </div>
+              )}
+              <div className="text-xl font-semibold tracking-tight" style={{ color: "var(--primary)" }}>
+                {t.name}
+              </div>
+              <div className="mt-4 flex items-baseline gap-1.5">
+                <span className="text-3xl font-semibold tracking-tight">{t.units}</span>
+                <span className="text-sm text-muted-foreground">IT units</span>
+              </div>
+              <ul className="mt-6 space-y-2.5">
+                {perks.map((p) => (
+                  <li key={p} className="flex items-center gap-2 text-sm">
+                    <Check className="h-4 w-4 text-primary shrink-0" />
+                    <span>{p}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        <p className="text-xs text-muted-foreground text-center mt-6 italic">
+          *Other costs may be incurred — only the data wipe is free.
+        </p>
+      </div>
+    </section>
+  );
+}
+
 function Impact() {
   return (
     <section id="impact" className="py-24 md:py-32">
@@ -282,7 +401,7 @@ function Impact() {
         <div className="flex items-start gap-4 pt-2 rounded-2xl border border-border bg-card p-5 text-left max-w-xl mx-auto">
           <Sparkles className="h-5 w-5 text-primary mt-0.5 shrink-0" />
           <p className="text-sm text-muted-foreground leading-relaxed">
-            <span className="font-medium text-foreground">2 assets sourced · 100% functional.</span> Small numbers,
+            <span className="font-medium text-foreground">3 assets sourced · 100% functional.</span> Small numbers,
             big proof: our circular model works at scale-of-one before it scales to thousands.
           </p>
         </div>
@@ -383,8 +502,8 @@ function Financials() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-px rounded-2xl overflow-hidden bg-border">
-          <MiniMetric value="₱13.7K" label="Total equity" />
-          <MiniMetric value="2" label="Assets sourced" />
+          <MiniMetric value="₱23.7K" label="Total equity" />
+          <MiniMetric value="3" label="Assets sourced" />
           <MiniMetric value="1.0" label="Refurbishment yield" />
           <MiniMetric value="0%" label="Lost asset rate" />
         </div>
